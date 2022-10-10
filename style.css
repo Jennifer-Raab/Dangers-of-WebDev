@@ -1,13 +1,21 @@
+:root {
+  --primary: #31087b;
+  --secondary: #fa2fb5;
+  --thirdy: #100720;
+  --forthy: white;
+  --fithy: #ffc23c;
+}
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #eff2e4;
+  background-color: var(--primary);
   font-family: "Montserrat", sans-serif;
 }
 
 header {
-  background-color: #405b63;
+  background-color: var(--thirdy);
   height: 10rem;
   display: flex;
   justify-content: center;
@@ -15,20 +23,36 @@ header {
 }
 
 header h1 {
-  color: #f7f8f1;
+  color: var(--secondary);
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
 }
 
+h4 {
+  color: var(--fithy);
+  font-size: 2rem;
+}
+
 main {
-  color: #463239;
+  color: var(--forthy);
   padding: 3% 22%;
   line-height: 2.3;
   font-size: 1.2rem;
 }
 
+#authors {
+  font-weight: 200;
+}
+
+#remember {
+  font-weight: 600;
+  font-size: 1.5rem;
+  border: 3px solid var(--forthy);
+  padding: 0.5rem;
+}
+
 footer {
-  background-color: #405b63;
+  background-color: var(--thirdy);
   height: 7rem;
   display: flex;
   align-items: center;
@@ -40,17 +64,17 @@ footer button {
   border-radius: 5px;
   padding: 0.5%;
   border: none;
-  border: 2px solid #f7f8f1;
+  border: 2px solid var(--secondary);
   cursor: pointer;
   font-size: 1.2rem;
   color: #f7f8f1;
-  box-shadow: 0 0 10px #b5b8a4;
+  box-shadow: 0 0 10px var(--secondary);
 }
 footer button:hover {
-  box-shadow: 0 0 20px #b5b8a4;
+  box-shadow: 0 0 20px var(--secondary);
 }
 
 footer span {
-  color: #f7f8f1;
+  color: var(--secondary);
   font-size: 1.5rem;
 }
